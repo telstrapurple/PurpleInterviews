@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142975299-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-202822552-1');
+		</script>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Purple Interviews - Development</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-dc4eb517.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-2e27399c.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-326f3be3.js">
+		<link rel="modulepreload" href="/_app/pages/[slug].svelte-1ef09ee4.js">
+		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-c4e0dbc2.css">
+
+		<script type="module">
+			import { start } from "/_app/start-dc4eb517.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-326f3be3.js"),
+						import("/_app/pages/[slug].svelte-1ef09ee4.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/development",
+						query: new URLSearchParams(""),
+						params: {"slug":"development"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div><div class="filter drop-shadow-md bg-white"><nav class="border-t-2 border-solid border-red"><a href="/"><img src="/tplogo-red.svg" alt="Telstra Purple" class="px-12 lg:px-32 py-2 lg:py-4"></a></nav></div>
+	<div class="px-12 lg:px-32 pt-6 lg:pt-24 pb-3 lg:pb-12"><div class="max-w-screen-xl flex flex-col"><div class="flex flex-col lg:flex-row"><div class="flex flex-col"><h1 class="pb-3 lg:pb-12">Purple Interviews</h1>
+				<p class="max-w-prose">We&#39;re pleased to invite you to the testing stage of our Consultant roles at Telstra Purple. On this page you&#39;ll find instructions 
+					on how to complete the technical interview pre-requisites for the desired role you&#39;re looking to apply for.
+					<br><br>
+					Once you have completed the prescribed test, please send back your workings as instructed below. One of our consultants will then review and 
+					make a decision on whether you will progress to the next stage. Rest assured, we&#39;ll of course give you feedback either way.
+					<br><br>
+					If you&#39;re interested to see more roles at Telstra Purple, make sure to check out <a href="http://purple.telstra.com/careers" class="text-red">Telstra Purple Careers</a>.
+					<br><br>
+					To understand more about our role levels, check out our <a href="http://personas.purple.telstra.com/" class="text-red">Career Frameworks</a> page.
+				</p></div>
+			<img src="/people.svg" alt="Group of diverse people" class="max-h-300"></div>
+		<h2 class="py-3 lg:pt-12 lg:pb-2">Interview for</h2>
+			<div class="flex flex-col lg:flex-row justify-start flex-wrap"><a href="/cloud"><div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">Cloud</div>
+					</a><a href="/data"><div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">Data</div>
+					</a><a href="/development"><div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">Development</div>
+					</a></div></div></div>
+	
+
+
+
+<div class="px-12 lg:px-32 max-w-screen bg-gray"><h2 class="pb-4 lg:pb-4 text-black text-xl">Instructions for</h2>
+	<div class="flex flex-col lg:flex-row justify-start pb-2 lg:pb-8"><a href="#toy-robot" class="text-red"><div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">Toy Robot</div>
+			</a></div></div>
+<div class="flex flex-col sm:flex-row px-12 lg:px-32 pt-4 pb-5 lg:pt-14 bg-gray-lighter"><article class="Interview"><!-- HTML_TAG_START --><h1 id="toy-robot"><a aria-hidden="true" tabindex="-1" href="#toy-robot"><span class="icon icon-link"></span></a>Toy Robot</h1>
+<h2 id="scenario"><a aria-hidden="true" tabindex="-1" href="#scenario"><span class="icon icon-link"></span></a>Scenario</h2>
+<p>Create a library that can read in commands of the following form:</p>
+<ul>
+<li>PLACE X, Y, DIRECTION</li>
+<li>MOVE</li>
+<li>LEFT</li>
+<li>RIGHT</li>
+<li>REPORT</li>
+</ul>
+<h3 id="developing-your-solution"><a aria-hidden="true" tabindex="-1" href="#developing-your-solution"><span class="icon icon-link"></span></a>Developing your Solution</h3>
+<ol>
+<li>Use your preferred language, platform and IDE to implement this solution.
+<ul>
+<li>If C#: A solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack, if not MS.</li>
+<li>If iOS: please write an interactive UI for the application in Swift</li>
+<li>If Android: please write an interactive UI for the application in Kotlin</li>
+</ul>
+</li>
+<li>Your solution should be clean and easy to read, maintain and execute.</li>
+<li>You should provide build scripts or instructions to build and run the solution.</li>
+<li>There should be a user interface to run the solution and assess that it works correctly. This could be a command prompt interface that takes one string command in at a time.</li>
+<li>The code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.</li>
+</ol>
+<h2 id="solution-requirements"><a aria-hidden="true" tabindex="-1" href="#solution-requirements"><span class="icon icon-link"></span></a>Solution Requirements</h2>
+<ul>
+<li>The library allows for a simulation of a toy robot moving on a 6 x 6 square tabletop.</li>
+<li>There are no obstructions on the table surface.</li>
+<li>The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in this must be prevented, however further valid movement commands must still be allowed.</li>
+<li>PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.</li>
+<li>(0,0) can be considered as the SOUTH WEST corner and (5,5) as the NORTH EAST corner.</li>
+<li>The first valid command to the robot is a PLACE command. After that, any sequence of commands may be issued, in any order, including another PLACE command. The library should discard all commands in the sequence until a valid PLACE command has been executed.</li>
+<li>The PLACE command should be discarded if it places the robot outside of the table surface.</li>
+<li>Once the robot is on the table, subsequent PLACE commands could leave out the direction and only provide the coordinates. When this happens, the robot moves to the new coordinates without changing the direction.</li>
+<li>MOVE will move the toy robot one unit forward in the direction it is currently facing.</li>
+<li>LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.</li>
+<li>REPORT will announce the X,Y and orientation of the robot.</li>
+<li>A robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.</li>
+</ul>
+<h2 id="example-input-and-output"><a aria-hidden="true" tabindex="-1" href="#example-input-and-output"><span class="icon icon-link"></span></a>Example Input and Output</h2>
+<ol>
+<li>Example 1 Input</li>
+</ol>
+<ul>
+<li>PLACE 0,0,NORTH</li>
+<li>MOVE</li>
+<li>REPORT</li>
+</ul>
+<p><strong>Output:</strong> 0,1,NORTH</p>
+<ol>
+<li>Example 2 Input</li>
+</ol>
+<ul>
+<li>PLACE 0,0,NORTH</li>
+<li>LEFT</li>
+<li>REPORT</li>
+</ul>
+<p><strong>Output:</strong> 0,0,WEST</p>
+<ol>
+<li>Example 3 Input</li>
+</ol>
+<ul>
+<li>PLACE 1,2,EAST-</li>
+<li>MOVE</li>
+<li>MOVE</li>
+<li>LEFT</li>
+<li>MOVE</li>
+<li>REPORT</li>
+</ul>
+<p><strong>Output:</strong> 3,3,NORTH</p>
+<ol>
+<li>Example 4 Input</li>
+</ol>
+<ul>
+<li>PLACE 1,2,EAST</li>
+<li>MOVE</li>
+<li>LEFT</li>
+<li>MOVE</li>
+<li>PLACE 3,1</li>
+<li>MOVE</li>
+<li>REPORT</li>
+</ul>
+<p><strong>Output:</strong> 3,2,NORTH</p>
+<h2 id="code-complete"><a aria-hidden="true" tabindex="-1" href="#code-complete"><span class="icon icon-link"></span></a>Code Complete</h2>
+<p>When the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple.</p><!-- HTML_TAG_END --></article></div>
+<button id="scrollToTopButton" class="fixed bottom-5 right-7 bg-red text-white p-3 text-lg rounded-xl hidden">Top</button></div>
+
+
+
+			<script type="application/json" data-type="svelte-data" data-url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Cloud\",\"interviews\":\"Azure Cloud,AWS Cloud\",\"sortorder\":1},\"slug\":\"cloud\"},{\"metadata\":{\"title\":\"Data\",\"interviews\":\"Data Analyst,Azure Data Engineer\",\"sortorder\":1},\"slug\":\"data\"},{\"metadata\":{\"title\":\"Development\",\"interviews\":\"Toy Robot\",\"sortorder\":2},\"slug\":\"development\"}]"}</script>
+
+	<script type="application/json" data-type="svelte-data" data-url="/development.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"Development\",\"interviews\":\"Toy Robot\",\"sortorder\":2},\"content\":\"\u003Ch1 id=\\\"toy-robot\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#toy-robot\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EToy Robot\u003C\u002Fh1\u003E\\n\u003Ch2 id=\\\"scenario\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#scenario\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EScenario\u003C\u002Fh2\u003E\\n\u003Cp\u003ECreate a library that can read in commands of the following form:\u003C\u002Fp\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE X, Y, DIRECTION\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003ERIGHT\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch3 id=\\\"developing-your-solution\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#developing-your-solution\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EDeveloping your Solution\u003C\u002Fh3\u003E\\n\u003Col\u003E\\n\u003Cli\u003EUse your preferred language, platform and IDE to implement this solution.\\n\u003Cul\u003E\\n\u003Cli\u003EIf C#: A solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack, if not MS.\u003C\u002Fli\u003E\\n\u003Cli\u003EIf iOS: please write an interactive UI for the application in Swift\u003C\u002Fli\u003E\\n\u003Cli\u003EIf Android: please write an interactive UI for the application in Kotlin\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003C\u002Fli\u003E\\n\u003Cli\u003EYour solution should be clean and easy to read, maintain and execute.\u003C\u002Fli\u003E\\n\u003Cli\u003EYou should provide build scripts or instructions to build and run the solution.\u003C\u002Fli\u003E\\n\u003Cli\u003EThere should be a user interface to run the solution and assess that it works correctly. This could be a command prompt interface that takes one string command in at a time.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"solution-requirements\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#solution-requirements\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ESolution Requirements\u003C\u002Fh2\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EThe library allows for a simulation of a toy robot moving on a 6 x 6 square tabletop.\u003C\u002Fli\u003E\\n\u003Cli\u003EThere are no obstructions on the table surface.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in this must be prevented, however further valid movement commands must still be allowed.\u003C\u002Fli\u003E\\n\u003Cli\u003EPLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.\u003C\u002Fli\u003E\\n\u003Cli\u003E(0,0) can be considered as the SOUTH WEST corner and (5,5) as the NORTH EAST corner.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe first valid command to the robot is a PLACE command. After that, any sequence of commands may be issued, in any order, including another PLACE command. The library should discard all commands in the sequence until a valid PLACE command has been executed.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe PLACE command should be discarded if it places the robot outside of the table surface.\u003C\u002Fli\u003E\\n\u003Cli\u003EOnce the robot is on the table, subsequent PLACE commands could leave out the direction and only provide the coordinates. When this happens, the robot moves to the new coordinates without changing the direction.\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE will move the toy robot one unit forward in the direction it is currently facing.\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT will announce the X,Y and orientation of the robot.\u003C\u002Fli\u003E\\n\u003Cli\u003EA robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch2 id=\\\"example-input-and-output\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#example-input-and-output\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EExample Input and Output\u003C\u002Fh2\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 1 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 0,0,NORTH\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Cp\u003E\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 0,1,NORTH\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 2 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 0,0,NORTH\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Cp\u003E\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 0,0,WEST\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 3 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 1,2,EAST-\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Cp\u003E\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 3,3,NORTH\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 4 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 1,2,EAST\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EPLACE 3,1\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Cp\u003E\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 3,2,NORTH\u003C\u002Fp\u003E\\n\u003Ch2 id=\\\"code-complete\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#code-complete\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ECode Complete\u003C\u002Fh2\u003E\\n\u003Cp\u003EWhen the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant\u002F Talent Aquisition Specialist who contacted you from Telstra Purple.\u003C\u002Fp\u003E\"}"}</script>
+		</div>
+	</body>
+</html>

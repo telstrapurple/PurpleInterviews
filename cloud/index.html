@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142975299-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-202822552-1');
+		</script>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Purple Interviews - Cloud</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-dc4eb517.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-2e27399c.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-326f3be3.js">
+		<link rel="modulepreload" href="/_app/pages/[slug].svelte-1ef09ee4.js">
+		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-c4e0dbc2.css">
+
+		<script type="module">
+			import { start } from "/_app/start-dc4eb517.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-326f3be3.js"),
+						import("/_app/pages/[slug].svelte-1ef09ee4.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/cloud",
+						query: new URLSearchParams(""),
+						params: {"slug":"cloud"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div><div class="filter drop-shadow-md bg-white"><nav class="border-t-2 border-solid border-red"><a href="/"><img src="/tplogo-red.svg" alt="Telstra Purple" class="px-12 lg:px-32 py-2 lg:py-4"></a></nav></div>
+	<div class="px-12 lg:px-32 pt-6 lg:pt-24 pb-3 lg:pb-12"><div class="max-w-screen-xl flex flex-col"><div class="flex flex-col lg:flex-row"><div class="flex flex-col"><h1 class="pb-3 lg:pb-12">Purple Interviews</h1>
+				<p class="max-w-prose">We&#39;re pleased to invite you to the testing stage of our Consultant roles at Telstra Purple. On this page you&#39;ll find instructions 
+					on how to complete the technical interview pre-requisites for the desired role you&#39;re looking to apply for.
+					<br><br>
+					Once you have completed the prescribed test, please send back your workings as instructed below. One of our consultants will then review and 
+					make a decision on whether you will progress to the next stage. Rest assured, we&#39;ll of course give you feedback either way.
+					<br><br>
+					If you&#39;re interested to see more roles at Telstra Purple, make sure to check out <a href="http://purple.telstra.com/careers" class="text-red">Telstra Purple Careers</a>.
+					<br><br>
+					To understand more about our role levels, check out our <a href="http://personas.purple.telstra.com/" class="text-red">Career Frameworks</a> page.
+				</p></div>
+			<img src="/people.svg" alt="Group of diverse people" class="max-h-300"></div>
+		<h2 class="py-3 lg:pt-12 lg:pb-2">Interview for</h2>
+			<div class="flex flex-col lg:flex-row justify-start flex-wrap"><a href="/cloud"><div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">Cloud</div>
+					</a><a href="/data"><div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">Data</div>
+					</a><a href="/development"><div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">Development</div>
+					</a></div></div></div>
+	
+
+
+
+<div class="px-12 lg:px-32 max-w-screen bg-gray"><h2 class="pb-4 lg:pb-4 text-black text-xl">Instructions for</h2>
+	<div class="flex flex-col lg:flex-row justify-start pb-2 lg:pb-8"><a href="#azure-cloud" class="text-red"><div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">Azure Cloud</div>
+			</a><a href="#aws-cloud" class="text-red"><div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">AWS Cloud</div>
+			</a></div></div>
+<div class="flex flex-col sm:flex-row px-12 lg:px-32 pt-4 pb-5 lg:pt-14 bg-gray-lighter"><article class="Interview"><!-- HTML_TAG_START --><h1 id="azure-cloud"><a aria-hidden="true" tabindex="-1" href="#azure-cloud"><span class="icon icon-link"></span></a>Azure Cloud</h1>
+<h2 id="prerequisites"><a aria-hidden="true" tabindex="-1" href="#prerequisites"><span class="icon icon-link"></span></a>Prerequisites</h2>
+<p>In order to complete this test, you will need:</p>
+<ol>
+<li>An Azure Subscription. You can create a <a rel="external" href="https://azure.microsoft.com/en-au/free/">30-day free trial</a> if you dont have an Azure subscription.</li>
+<li>Your laptop with your tools/ IDE that you like to work with.</li>
+<li>A public GitHub repo, or a Google/OneDrive where you can share your workings.</li>
+</ol>
+<h2 id="scenario"><a aria-hidden="true" tabindex="-1" href="#scenario"><span class="icon icon-link"></span></a>Scenario</h2>
+<p>We're after an Azure environment for your software developers colleagues to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.</p>
+<p>The development team are after a new SQL PaaS database. They're security conscious have heard SQL PaaS in Azure can be protected so it can only be accessed on internal IP ranges on a virtual network. They're excited by this and are keen to explore this in development.</p>
+<h2 id="instructions"><a aria-hidden="true" tabindex="-1" href="#instructions"><span class="icon icon-link"></span></a>Instructions</h2>
+<p>Using your Azure Subscription, deploy the following.</p>
+<ul>
+<li>We need a new Azure Resource Group created.</li>
+<li>Deploy in the new Resource Group a vNet (a /24 CIDR sized subnet) and a SQL PaaS Database.</li>
+<li>We want the SQL PaaS database to be connected by the vNet only and not accessible via the internet.</li>
+</ul>
+<h3 id="infrastructure-as-code"><a aria-hidden="true" tabindex="-1" href="#infrastructure-as-code"><span class="icon icon-link"></span></a>Infrastructure as Code</h3>
+<p>The development team colleagues have reached out and shared their two (2) ARM Templates with you. They have not been tested, but they have invited you to use them with your deployment!</p>
+<ol>
+<li><a rel="external" href="./code/sqldatabase.json">SQL Database template</a></li>
+<li><a rel="external" href="/code/networking.json">Virtual Network template</a></li>
+</ol>
+<h2 id="completion"><a aria-hidden="true" tabindex="-1" href="#completion"><span class="icon icon-link"></span></a>Completion</h2>
+<p>When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Azure Subscription running until the in-person technical interview has been conducted or as otherwise advised.</p>
+<h1 id="aws-cloud"><a aria-hidden="true" tabindex="-1" href="#aws-cloud"><span class="icon icon-link"></span></a>AWS Cloud</h1>
+<h2 id="prerequisites-1"><a aria-hidden="true" tabindex="-1" href="#prerequisites-1"><span class="icon icon-link"></span></a>Prerequisites</h2>
+<p>In order to complete this test, you will need:</p>
+<ol>
+<li>An AWS Account. You can utilise <a rel="external" href="https://aws.amazon.com/free/">AWS free tier</a> if you dont have an AWS Account.</li>
+<li>Your laptop with your tools/ IDE that you like to work with.</li>
+<li>A public GitHub repo, or a Google/OneDrive where you can share your workings.</li>
+</ol>
+<h2 id="scenario-1"><a aria-hidden="true" tabindex="-1" href="#scenario-1"><span class="icon icon-link"></span></a>Scenario</h2>
+<p>We're after an AWS environment for Developers to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.</p>
+<p>The development team are after a new DynamoDB NoSQL database. The company is very security conscious it's imperative that the DynamoDB can only be accessed by a new VPC. Eventually the plan is for the VPC to connect back to on-premises but for right now the developers just want to know the DynamoDB can be accessed only by internal IP ranges.</p>
+<h2 id="instructions-1"><a aria-hidden="true" tabindex="-1" href="#instructions-1"><span class="icon icon-link"></span></a>Instructions</h2>
+<p>Using your AWS Account, deploy the following.</p>
+<ul>
+<li>A VPC (a /24 CIDR sized VPC is fine)</li>
+<li>A DynamoDB table. The table name is whatever you want to call it.</li>
+<li>Configuration of the DynamoDB table endpoint so it can be accessed only by the VPC.</li>
+</ul>
+<h3 id="infrastructure-as-code-1"><a aria-hidden="true" tabindex="-1" href="#infrastructure-as-code-1"><span class="icon icon-link"></span></a>Infrastructure as Code</h3>
+<p>The development team colleagues have reached out and shared their two (2) CloudFormation Templates with you. They have not been tested, but they have invited you to use them with your deployment!</p>
+<ol>
+<li><a rel="external" href="code/deployment.yaml">Deployment template</a></li>
+<li><a rel="external" href="code/endpoint.yaml">EndPoint template</a></li>
+</ol>
+<h2 id="completion-1"><a aria-hidden="true" tabindex="-1" href="#completion-1"><span class="icon icon-link"></span></a>Completion</h2>
+<p>When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your AWS Virtual Private Cloud running until the in-person technical interview has been conducted or as otherwise advised.</p><!-- HTML_TAG_END --></article></div>
+<button id="scrollToTopButton" class="fixed bottom-5 right-7 bg-red text-white p-3 text-lg rounded-xl hidden">Top</button></div>
+
+
+
+			<script type="application/json" data-type="svelte-data" data-url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Cloud\",\"interviews\":\"Azure Cloud,AWS Cloud\",\"sortorder\":1},\"slug\":\"cloud\"},{\"metadata\":{\"title\":\"Data\",\"interviews\":\"Data Analyst,Azure Data Engineer\",\"sortorder\":1},\"slug\":\"data\"},{\"metadata\":{\"title\":\"Development\",\"interviews\":\"Toy Robot\",\"sortorder\":2},\"slug\":\"development\"}]"}</script>
+
+	<script type="application/json" data-type="svelte-data" data-url="/cloud.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"Cloud\",\"interviews\":\"Azure Cloud,AWS Cloud\",\"sortorder\":1},\"content\":\"\u003Ch1 id=\\\"azure-cloud\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#azure-cloud\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EAzure Cloud\u003C\u002Fh1\u003E\\n\u003Ch2 id=\\\"prerequisites\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#prerequisites\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EPrerequisites\u003C\u002Fh2\u003E\\n\u003Cp\u003EIn order to complete this test, you will need:\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003EAn Azure Subscription. You can create a \u003Ca href=\\\"https:\u002F\u002Fazure.microsoft.com\u002Fen-au\u002Ffree\u002F\\\"\u003E30-day free trial\u003C\u002Fa\u003E if you dont have an Azure subscription.\u003C\u002Fli\u003E\\n\u003Cli\u003EYour laptop with your tools\u002F IDE that you like to work with.\u003C\u002Fli\u003E\\n\u003Cli\u003EA public GitHub repo, or a Google\u002FOneDrive where you can share your workings.\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"scenario\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#scenario\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EScenario\u003C\u002Fh2\u003E\\n\u003Cp\u003EWe're after an Azure environment for your software developers colleagues to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.\u003C\u002Fp\u003E\\n\u003Cp\u003EThe development team are after a new SQL PaaS database. They're security conscious have heard SQL PaaS in Azure can be protected so it can only be accessed on internal IP ranges on a virtual network. They're excited by this and are keen to explore this in development.\u003C\u002Fp\u003E\\n\u003Ch2 id=\\\"instructions\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#instructions\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EInstructions\u003C\u002Fh2\u003E\\n\u003Cp\u003EUsing your Azure Subscription, deploy the following.\u003C\u002Fp\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EWe need a new Azure Resource Group created.\u003C\u002Fli\u003E\\n\u003Cli\u003EDeploy in the new Resource Group a vNet (a \u002F24 CIDR sized subnet) and a SQL PaaS Database.\u003C\u002Fli\u003E\\n\u003Cli\u003EWe want the SQL PaaS database to be connected by the vNet only and not accessible via the internet.\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch3 id=\\\"infrastructure-as-code\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#infrastructure-as-code\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EInfrastructure as Code\u003C\u002Fh3\u003E\\n\u003Cp\u003EThe development team colleagues have reached out and shared their two (2) ARM Templates with you. They have not been tested, but they have invited you to use them with your deployment!\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003E\u003Ca href=\\\".\u002Fcode\u002Fsqldatabase.json\\\"\u003ESQL Database template\u003C\u002Fa\u003E\u003C\u002Fli\u003E\\n\u003Cli\u003E\u003Ca href=\\\"\u002Fcode\u002Fnetworking.json\\\"\u003EVirtual Network template\u003C\u002Fa\u003E\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"completion\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#completion\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ECompletion\u003C\u002Fh2\u003E\\n\u003Cp\u003EWhen the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant\u002F Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Azure Subscription running until the in-person technical interview has been conducted or as otherwise advised.\u003C\u002Fp\u003E\\n\u003Ch1 id=\\\"aws-cloud\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#aws-cloud\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EAWS Cloud\u003C\u002Fh1\u003E\\n\u003Ch2 id=\\\"prerequisites-1\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#prerequisites-1\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EPrerequisites\u003C\u002Fh2\u003E\\n\u003Cp\u003EIn order to complete this test, you will need:\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003EAn AWS Account. You can utilise \u003Ca href=\\\"https:\u002F\u002Faws.amazon.com\u002Ffree\u002F\\\"\u003EAWS free tier\u003C\u002Fa\u003E if you dont have an AWS Account.\u003C\u002Fli\u003E\\n\u003Cli\u003EYour laptop with your tools\u002F IDE that you like to work with.\u003C\u002Fli\u003E\\n\u003Cli\u003EA public GitHub repo, or a Google\u002FOneDrive where you can share your workings.\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"scenario-1\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#scenario-1\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EScenario\u003C\u002Fh2\u003E\\n\u003Cp\u003EWe're after an AWS environment for Developers to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.\u003C\u002Fp\u003E\\n\u003Cp\u003EThe development team are after a new DynamoDB NoSQL database. The company is very security conscious it's imperative that the DynamoDB can only be accessed by a new VPC. Eventually the plan is for the VPC to connect back to on-premises but for right now the developers just want to know the DynamoDB can be accessed only by internal IP ranges.\u003C\u002Fp\u003E\\n\u003Ch2 id=\\\"instructions-1\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#instructions-1\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EInstructions\u003C\u002Fh2\u003E\\n\u003Cp\u003EUsing your AWS Account, deploy the following.\u003C\u002Fp\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EA VPC (a \u002F24 CIDR sized VPC is fine)\u003C\u002Fli\u003E\\n\u003Cli\u003EA DynamoDB table. The table name is whatever you want to call it.\u003C\u002Fli\u003E\\n\u003Cli\u003EConfiguration of the DynamoDB table endpoint so it can be accessed only by the VPC.\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch3 id=\\\"infrastructure-as-code-1\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#infrastructure-as-code-1\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EInfrastructure as Code\u003C\u002Fh3\u003E\\n\u003Cp\u003EThe development team colleagues have reached out and shared their two (2) CloudFormation Templates with you. They have not been tested, but they have invited you to use them with your deployment!\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003E\u003Ca href=\\\"code\u002Fdeployment.yaml\\\"\u003EDeployment template\u003C\u002Fa\u003E\u003C\u002Fli\u003E\\n\u003Cli\u003E\u003Ca href=\\\"code\u002Fendpoint.yaml\\\"\u003EEndPoint template\u003C\u002Fa\u003E\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"completion-1\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#completion-1\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ECompletion\u003C\u002Fh2\u003E\\n\u003Cp\u003EWhen the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant\u002F Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your AWS Virtual Private Cloud running until the in-person technical interview has been conducted or as otherwise advised.\u003C\u002Fp\u003E\"}"}</script>
+		</div>
+	</body>
+</html>
