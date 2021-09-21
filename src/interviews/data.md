@@ -18,7 +18,7 @@ In order to complete this test, you will need:
 As the Data Analyst for a small fuel company, you have been given two (2) data sources.
 
 1. [The FuelWatch RSS feed](http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS)
-2. [Discounts Excel file](http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS)
+2. [Discounts Excel file](code/discount.xlsx)
 
 ## Instructions
 

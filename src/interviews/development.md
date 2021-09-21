@@ -1,5 +1,5 @@
 ---
-title: Software Development
+title: Development
 interviews: Toy Robot
 sortorder: 2
 ---

@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  VPCId:
+    Description: ID of VPC to create endpoint.
+    Type: String
+  DynamoDBArn:
+    Description: ARN of DynamoDB Table.
+    Type: String
+Resources:   
+  DynamoDBEndpoint:
+    Type: "AWS::EC2::VPCEndpoint"
+    Properties:
+      ServiceName: !Sub "com.amazonaws.${AWS::Region}.dynamodb"
+      VpcId: !Ref VPCId
+      PolicyDocument: 
+        Version: "2012-10-17"
+        Statement: 
+            Sid: "Statement"
+            Action: "dynamodb:*"
+            Effect: "Allow"
+            Resource: !Ref DynamoDBArn
+            Principal: "*"
+      

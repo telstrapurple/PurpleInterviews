@@ -1,0 +1,41 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  TableName:
+    Description: DynamoDB Table name.
+    Type: String
+Resources:
+  myVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/24
+      EnableDnsSupport: 'false'
+      EnableDnsHostnames: 'false'
+      InstanceTenancy: dedicated
+      Tags:
+      - Key: Name
+        Value: myVPC
+  myDynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref TableName
+      AttributeDefinitions:
+      - AttributeName: "Interviewee"
+        AttributeType: "S"
+      KeySchema:
+      - AttributeName: "Interviewee"
+        KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+Outputs:
+  VPCId:
+    Value:
+      Ref: myVPC
+  TableName:
+    Value: !Ref 'myDynamoDBTable'
+    Description: Table name of the newly created DynamoDB table
+  DynamoDBQualifiedArn:
+    Export:
+      Name: DynamoDBArn
+    Value:
+      Fn::GetAtt: myDynamoDBTable.Arn

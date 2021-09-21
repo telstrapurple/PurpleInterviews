@@ -36,19 +36,19 @@
 	<title>Purple Interviews - {post.metadata.title}</title>
 </svelte:head>
 
-<div class="px-12 lg:px-32 max-w-screen-xl">
+<div class="px-12 lg:px-32 max-w-screen bg-gray">
 	<h2 class="pb-4 lg:pb-4 text-black text-xl">Instructions for</h2>
 	<div class="flex flex-col lg:flex-row justify-start pb-2 lg:pb-8">
 		{#each post.metadata.interviews.split(',') as interviews}
 			<a href={`#${interviews.toLocaleLowerCase().replace(/ /g,'-')}`} class="text-red">
-				<div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2">{interviews}</div>
+				<div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">{interviews}</div>
 			</a>
 		{/each}
 	</div>
 </div>
 <div class="flex flex-col sm:flex-row px-12 lg:px-32 pt-4 pb-5 lg:pt-14 bg-gray-lighter">
 	<article class="Interview">
-		{@html post.content}
+		{@html post.content.replace(/a href/g,"a rel=\"external\" href")}
 	</article>
 </div>
 <button

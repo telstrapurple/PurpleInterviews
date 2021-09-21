@@ -32,8 +32,8 @@ Using your Azure Subscription, deploy the following.
 
 The development team colleagues have reached out and shared their two (2) ARM Templates with you. They have not been tested, but they have invited you to use them with your deployment!
 
-1. [SQL Database template](a)
-2. [Virtual Network template](a)
+1. [SQL Database template](./code/sqldatabase.json)
+2. [Virtual Network template](/code/networking.json)
 
 ## Completion
 
@@ -67,8 +67,8 @@ Using your AWS Account, deploy the following.
 
 The development team colleagues have reached out and shared their two (2) CloudFormation Templates with you. They have not been tested, but they have invited you to use them with your deployment!
 
-1. [Deployment template](a)
-2. [EndPoint template](a)
+1. [Deployment template](code/deployment.yaml)
+2. [EndPoint template](code/endpoint.yaml)
 
 ## Completion
 

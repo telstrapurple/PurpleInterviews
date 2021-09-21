@@ -30,7 +30,7 @@ import { component_subscribe } from 'svelte/internal';
 			<div class="flex flex-col lg:flex-row justify-start flex-wrap">
 				{#each Interviews as Interview}
 					<a href={`${base}/${Interview.slug}`}>
-						<div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2">{Interview.metadata.title}</div>
+						<div class="rounded-lg px-5 py-2 bg-red text-white text-lg mr-4 mb-2 hover:bg-black">{Interview.metadata.title}</div>
 					</a>
 				{/each}
 			</div>
