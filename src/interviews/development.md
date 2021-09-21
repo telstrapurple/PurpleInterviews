@@ -81,4 +81,4 @@ Create a library that can read in commands of the following form:
 
 ## Code Complete
 
-When the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple.
+When the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
