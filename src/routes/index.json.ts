@@ -3,7 +3,7 @@ import { join } from 'path';
 import { MarkdownMetadata, process } from '$lib/markdown';
 import type { RequestHandler } from '@sveltejs/kit';
 
-const InterviewFileDir = 'src/Interviews';
+const InterviewFileDir = 'src/interviews';
 
 export interface InterviewDefinition {
 	metadata: MarkdownMetadata;
