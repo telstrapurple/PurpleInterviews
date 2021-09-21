@@ -37,7 +37,7 @@ The development team colleagues have reached out and shared their two (2) ARM Te
 
 ## Completion
 
-When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Azure Subscription running until the in-person technical interview has been conducted or as otherwise advised.
+When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Azure Subscription running until the in-person technical interview has been conducted or as otherwise advised.
 
 # AWS Cloud
 
@@ -72,4 +72,4 @@ The development team colleagues have reached out and shared their two (2) CloudF
 
 ## Completion
 
-When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your AWS Virtual Private Cloud running until the in-person technical interview has been conducted or as otherwise advised.
+When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your AWS Virtual Private Cloud running until the in-person technical interview has been conducted or as otherwise advised.

@@ -47,7 +47,7 @@ The business executive has also asked for how a consistent theme applied can be 
 
 ## Completion
 
-When the solution is above is complete, save the PowerBI file and any supporting templates and share with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple.
+When the solution is above is complete, save the PowerBI file and any supporting templates and share with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
 
 # Azure Data Engineer
 
@@ -63,8 +63,8 @@ In order to complete this test, you will need:
 
 We are assisting a customer in building out a solution which ingests the latest fuel prices from the Fuel Watch RSS feed. This data is not in a great structure, and we would like to ingest this data into a data lake, perform some transformations and build out a data mart for use in Power BI, the customers visualisation tool of choice.
 
-1. Our customer would like to take an infrastructure-as-code approach to the deployment of the new Azure resources.
-2. The delivery of a working prototype is highest priority. All resources should be in the Australia East region.
+1. Our customer would like to take an infrastructure-as-code approach to the deployment of the new Azure resources however, the delivery of a working prototype is the highest priority.
+2. All resources should be deployed in Australia.
 
 ## Instructions
 
@@ -113,8 +113,8 @@ Once the temporary data has been loaded into the data mart, transform the data i
 3. Add a primary key across the SiteID, BrandID and DateID columns and a clustered index on the DateID column.
     - The naming convention for the index should be ```IDX_<Table Name>_<Column Name>```.
 4. Create appropriate artefacts, scripts or pipelines to populate the tables above.
-    - Keep these artefacts handy for the technical interiew.
+    - Keep these artefacts handy for the technical interview.
 
 ## Completion
 
-When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Aquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Azure Subscription running until the in-person technical interview has been conducted or as otherwise advised.
+When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Azure Subscription running until the in-person technical interview has been conducted or as otherwise advised.
