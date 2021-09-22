@@ -16,7 +16,7 @@ In order to complete this test, you will need:
 
 ## Scenario
 
-We're after an Azure environment for your software developers colleagues to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.
+We're after an Azure environment for our software developers colleagues to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.
 
 The development team are after a new SQL PaaS database. They're security conscious have heard SQL PaaS in Azure can be protected so it can only be accessed on internal IP ranges on a virtual network. They're excited by this and are keen to explore this in development.
 
@@ -51,7 +51,7 @@ In order to complete this test, you will need:
 
 ## Scenario
 
-We're after an AWS environment for Developers to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.
+We're after an AWS environment for our software developers to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.
 
 The development team are after a new DynamoDB NoSQL database. The company is very security conscious it's imperative that the DynamoDB can only be accessed by a new VPC. Eventually the plan is for the VPC to connect back to on-premises but for right now the developers just want to know the DynamoDB can be accessed only by internal IP ranges.
 
