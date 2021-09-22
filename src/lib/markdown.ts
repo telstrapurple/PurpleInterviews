@@ -20,10 +20,7 @@ export interface ProcessedMarkdown {
 	content: string;
 }
 
-const parser = unified()
-	.use(parse)
-	.use(gfm)
-	.use(frontmatter, ['yaml']);
+const parser = unified().use(parse).use(gfm).use(frontmatter, ['yaml']);
 
 const runner = unified()
 	.use(remark2rehype) // Convert Markdown to Rehype
