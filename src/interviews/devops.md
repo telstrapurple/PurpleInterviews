@@ -27,7 +27,7 @@ The development team are after a new SQL PaaS database that must be connectected
 
 ## Instructions
 
-While the business is interested in making use of Terraform, they are currently only making use of PowerShell, CLI and Cloud specific templates (I.e. Aazure Resource Manager or CloudFormation templates). It's expected the pipelines built by you would use the some methodology unless you can provide suitable documentation highlighting the benefits of another technology.
+While the business is interested in making use of Terraform, they are currently only making use of PowerShell, CLI and Cloud specific templates (I.e. Azure Resource Manager or CloudFormation templates). It's expected the pipelines built by you would use the some methodology unless you can provide suitable documentation highlighting the benefits of another technology.
 
 The development team colleagues have shared their templates with you. They have not been tested, but they have used them for their sandbox environment.
 
