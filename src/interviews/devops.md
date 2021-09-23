@@ -8,34 +8,34 @@ sortorder: 4
 
 ## Prerequisites
 
-Please build the platform on the cloud environment as nomimated by the Consultant/ Talent Acquisition Specialist who has invited you to complete this test.
+Please build the platform on the cloud environment as nominated by the Consultant/Talent Acquisition Specialist who has invited you to complete this test.
 
 In order to complete this test, you will need:
 
 1. A GitHub account with access to GitHub Actions and public repo.
-   - If you're more comfortable with Azure DevOps you may use this for the pipeline development.
+   - If you're more comfortable with Azure DevOps or AWS Pipelines you may use this for the pipeline development.
 2. Access to an Cloud service provider environment.
-   - For an Azure Subscription, you can create a [30-day free trial](https://azure.microsoft.com/en-au/free/) if you dont have an Azure subscription.
-   - For an AWS Account, you can utilise [AWS free tier](https://aws.amazon.com/free/) if you dont have an AWS Account.
-3. Your laptop with your tools/ IDE that you like to work with.
+   - For an Azure Subscription, you can create a [30-day free trial](https://azure.microsoft.com/en-au/free/) if you don't have an Azure subscription.
+   - For an AWS Account, you can utilise [AWS free tier](https://aws.amazon.com/free/) if you don't have an AWS Account.
+3. Your laptop with your tools/IDE that you like to work with.
 
 ## Scenario
 
-We're after an environment for your software developers colleagues to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.
+We're after an environment for your software developer colleagues to work in. The long-term goal is that we'll be building a like-for-like environment for UAT and Production later but right now this is just for Development… Setting up for success.
 
-The development team are after a new SQL PaaS database that must be connectected to a virtual network using a secure endpoint. The operations team expect this to be deployed using automation pipelines that are also idempotent and well-governed.
+The development team are after a new SQL PaaS database that must be connected to a virtual network using a secure endpoint. The operations team expect this to be deployed using automation pipelines that are also idempotent and well-governed.
 
 ## Instructions
 
-While the business is interested in making use of Terraform, they are currently only making use of PowerShell, CLI and Cloud specific templates (I.e. Azure Resource Manager or CloudFormation templates). It's expected the pipelines built by you would use the some methodology unless you can provide suitable documentation highlighting the benefits of another technology.
+While the business is interested in making use of Terraform, they are currently only making use of PowerShell, CLI and Cloud specific templates (i.e. Azure Resource Manager or CloudFormation templates). It's expected that the pipelines built by you would use the same methodology unless you can provide suitable documentation highlighting the benefits of another technology.
 
 The development team colleagues have shared their templates with you. They have not been tested, but they have used them for their sandbox environment.
 
 - For Azure:
-  1.  [SQL Database template](./code/sqldatabase.json)
-  2.  [Virtual Network template](/code/networking.json)
+  1. [SQL Database template](./code/sqldatabase.json)
+  2. [Virtual Network template](/code/networking.json)
 - For AWS:
-  1.  [SQL RDS instance](./code/rds-cf-template.json)
+  1. [SQL RDS instance](./code/rds-cf-template.json)
 
 ### Requirements
 
@@ -47,8 +47,8 @@ As the automation specialist, we need:
 - If it doesn't exist, the pipeline must create the supporting environment.
 - Each environment would use the same virtual network.
 
-In addition to the pipeline, the operations team wish for their to be a branch policy that prevents pushes directly to the **main** branch.
+In addition to the pipeline, the operations team wish for there to be a branch policy that prevents pushes directly to the **main** branch.
 
 ## Completion
 
-When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Cloud service provider environment running until the in-person technical interview has been conducted or as otherwise advised.
+When the solution above is complete, save any artefacts created into a source code repository (e.g. GitHub) and share this repository (or artefacts) with the Consultant/Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Cloud service provider environment running until the in-person technical interview has been conducted or as otherwise advised.
