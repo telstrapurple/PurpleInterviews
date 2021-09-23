@@ -7,6 +7,7 @@ sortorder: 4
 # Automation Specialist
 
 ## Prerequisites
+
 Please build the platform on the cloud environment as nomimated by the Consultant/ Talent Acquisition Specialist who has invited you to complete this test.
 
 In order to complete this test, you will need:
@@ -31,10 +32,10 @@ While the business is interested in making use of Terraform, they are currently 
 The development team colleagues have shared their templates with you. They have not been tested, but they have used them for their sandbox environment.
 
 - For Azure:
-   1. [SQL Database template](./code/sqldatabase.json)
-   2. [Virtual Network template](/code/networking.json)
+  1.  [SQL Database template](./code/sqldatabase.json)
+  2.  [Virtual Network template](/code/networking.json)
 - For AWS:
-   1. [SQL RDS instance](./code/rds-cf-template.json)
+  1.  [SQL RDS instance](./code/rds-cf-template.json)
 
 ### Requirements
 
