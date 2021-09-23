@@ -11,7 +11,7 @@ Please build the platform on the cloud environment as nomimated by the Consultan
 
 In order to complete this test, you will need:
 
-1. A GitHub account and public repo.
+1. A GitHub account with access to GitHub Actions and public repo.
    - If you're more comfortable with Azure DevOps you may use this for the pipeline development.
 2. Access to an Cloud service provider environment.
    - For an Azure Subscription, you can create a [30-day free trial](https://azure.microsoft.com/en-au/free/) if you dont have an Azure subscription.
