@@ -30,12 +30,11 @@ While the business is interested in making use of Terraform, they are currently 
 
 The development team colleagues have shared their templates with you. They have not been tested, but they have used them for their sandbox environment.
 
-For Azure:
-1. [SQL Database template](./code/sqldatabase.json)
-2. [Virtual Network template](/code/networking.json)
-
-For AWS:
-1. [SQL RDS instance](./code/rds-cf-template.json)
+- For Azure:
+   1. [SQL Database template](./code/sqldatabase.json)
+   2. [Virtual Network template](/code/networking.json)
+- For AWS:
+   1. [SQL RDS instance](./code/rds-cf-template.json)
 
 ### Requirements
 
