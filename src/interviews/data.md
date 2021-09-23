@@ -43,7 +43,7 @@ You have been ask to create a Power BI report that combines both sources to answ
    - Be able to drill-down into all the details for a the top 10 cheapest fuel stations?
    - Discover quickly which sites are open 24 hours a day?
 
-The business executive has also asked for how a consistent theme applied can be applied to your report and other reports in the future.
+The business executives have also asked for how a consistent theme can be applied to the report and other reports in the future.
 
 ## Completion
 
