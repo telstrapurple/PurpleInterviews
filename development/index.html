@@ -8,16 +8,16 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-2da3c6ec.js">
+		<link rel="modulepreload" href="/_app/start-6a8dc90b.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-2e27399c.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-51423a04.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f0d5aa20.js">
 		<link rel="modulepreload" href="/_app/pages/[slug].svelte-72899930.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-7ec6c45f.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-58634277.css">
 
 		<script type="module">
-			import { start } from "/_app/start-2da3c6ec.js";
+			import { start } from "/_app/start-6a8dc90b.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -30,7 +30,7 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-51423a04.js"),
+						import("/_app/pages/__layout.svelte-f0d5aa20.js"),
 						import("/_app/pages/[slug].svelte-72899930.js")
 					],
 					page: {
@@ -87,11 +87,11 @@
 <li>RIGHT</li>
 <li>REPORT</li>
 </ul>
-<h3 id="developing-your-solution"><a aria-hidden="true" tabindex="-1" href="#developing-your-solution"><span class="icon icon-link"></span></a>Developing your Solution</h3>
+<h2 id="developing-your-solution"><a aria-hidden="true" tabindex="-1" href="#developing-your-solution"><span class="icon icon-link"></span></a>Developing your Solution</h2>
 <ol>
 <li>Use your preferred language, platform and IDE to implement this solution.
 <ul>
-<li>If C#: A solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack, if not MS.</li>
+<li>If C#: a console solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack.</li>
 <li>If iOS: please write an interactive UI for the application in Swift</li>
 <li>If Android: please write an interactive UI for the application in Kotlin</li>
 </ul>
@@ -120,55 +120,51 @@
 <ol>
 <li>Example 1 Input</li>
 </ol>
-<ul>
-<li>PLACE 0,0,NORTH</li>
-<li>MOVE</li>
-<li>REPORT
-<strong>Output:</strong> 0,1,NORTH</li>
-</ul>
-<ol>
+<pre><code class="hljs language-node-repl"><span class="hljs-meta">></span> <span class="javascript">PLACE <span class="hljs-number">0</span>,<span class="hljs-number">0</span>,NORTH</span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">REPORT</span>
+Output: 0,1,NORTH
+</code></pre>
+<ol start="2">
 <li>Example 2 Input</li>
 </ol>
-<ul>
-<li>PLACE 0,0,NORTH</li>
-<li>LEFT</li>
-<li>REPORT
-<strong>Output:</strong> 0,0,WEST</li>
-</ul>
-<ol>
+<pre><code class="hljs language-node-repl"><span class="hljs-meta">></span> <span class="javascript">PLACE <span class="hljs-number">0</span>,<span class="hljs-number">0</span>,NORTH</span>
+<span class="hljs-meta">></span> <span class="javascript">LEFT</span>
+<span class="hljs-meta">></span> <span class="javascript">REPORT</span>
+Output: 0,0,WEST
+</code></pre>
+<ol start="3">
 <li>Example 3 Input</li>
 </ol>
-<ul>
-<li>PLACE 1,2,EAST-</li>
-<li>MOVE</li>
-<li>MOVE</li>
-<li>LEFT</li>
-<li>MOVE</li>
-<li>REPORT
-<strong>Output:</strong> 3,3,NORTH</li>
-</ul>
-<ol>
+<pre><code class="hljs language-node-repl"><span class="hljs-meta">></span> <span class="javascript">PLACE <span class="hljs-number">1</span>,<span class="hljs-number">2</span>,EAST</span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">LEFT</span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">REPORT</span>
+Output: 3,3,NORTH
+</code></pre>
+<ol start="4">
 <li>Example 4 Input</li>
 </ol>
-<ul>
-<li>PLACE 1,2,EAST</li>
-<li>MOVE</li>
-<li>LEFT</li>
-<li>MOVE</li>
-<li>PLACE 3,1</li>
-<li>MOVE</li>
-<li>REPORT
-<strong>Output:</strong> 3,2,NORTH</li>
-</ul>
+<pre><code class="hljs language-node-repl"><span class="hljs-meta">></span> <span class="javascript">PLACE <span class="hljs-number">1</span>,<span class="hljs-number">2</span>,EAST</span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">LEFT</span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">PLACE <span class="hljs-number">3</span>,<span class="hljs-number">1</span></span>
+<span class="hljs-meta">></span> <span class="javascript">MOVE</span>
+<span class="hljs-meta">></span> <span class="javascript">REPORT</span>
+Output: 3,2,NORTH
+</code></pre>
 <h2 id="code-complete"><a aria-hidden="true" tabindex="-1" href="#code-complete"><span class="icon icon-link"></span></a>Code Complete</h2>
-<p>When the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.</p><!-- HTML_TAG_END --></article></div>
+<p>When the solution is code complete, save the source code to a repository (e.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.</p><!-- HTML_TAG_END --></article></div>
 <button id="scrollToTopButton" class="fixed bottom-5 right-7 bg-red text-white p-3 text-lg rounded-xl hidden">Top</button></div>
 
 
 
 			<script type="application/json" data-type="svelte-data" data-url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Cloud\",\"interviews\":\"Azure Cloud,AWS Cloud\",\"sortorder\":1},\"slug\":\"cloud\"},{\"metadata\":{\"title\":\"Data\",\"interviews\":\"Data Analyst,Data Engineer\",\"sortorder\":2},\"slug\":\"data\"},{\"metadata\":{\"title\":\"Development\",\"interviews\":\"Toy Robot\",\"sortorder\":3},\"slug\":\"development\"},{\"metadata\":{\"title\":\"DevOps\",\"interviews\":\"Automation Specialist\",\"sortorder\":4},\"slug\":\"devops\"}]"}</script>
 
-	<script type="application/json" data-type="svelte-data" data-url="/development.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"Development\",\"interviews\":\"Toy Robot\",\"sortorder\":3},\"content\":\"\u003Ch1 id=\\\"toy-robot\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#toy-robot\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EToy Robot\u003C\u002Fh1\u003E\\n\u003Ch2 id=\\\"scenario\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#scenario\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EScenario\u003C\u002Fh2\u003E\\n\u003Cp\u003ECreate a library that can read in commands of the following form:\u003C\u002Fp\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE X, Y, DIRECTION\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003ERIGHT\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch3 id=\\\"developing-your-solution\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#developing-your-solution\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EDeveloping your Solution\u003C\u002Fh3\u003E\\n\u003Col\u003E\\n\u003Cli\u003EUse your preferred language, platform and IDE to implement this solution.\\n\u003Cul\u003E\\n\u003Cli\u003EIf C#: A solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack, if not MS.\u003C\u002Fli\u003E\\n\u003Cli\u003EIf iOS: please write an interactive UI for the application in Swift\u003C\u002Fli\u003E\\n\u003Cli\u003EIf Android: please write an interactive UI for the application in Kotlin\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003C\u002Fli\u003E\\n\u003Cli\u003EYour solution should be clean and easy to read, maintain and execute.\u003C\u002Fli\u003E\\n\u003Cli\u003EYou should provide build scripts or instructions to build and run the solution.\u003C\u002Fli\u003E\\n\u003Cli\u003EThere should be a user interface to run the solution and assess that it works correctly. This could be a command prompt interface that takes one string command in at a time.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"solution-requirements\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#solution-requirements\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ESolution Requirements\u003C\u002Fh2\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EThe library allows for a simulation of a toy robot moving on a 6 x 6 square tabletop.\u003C\u002Fli\u003E\\n\u003Cli\u003EThere are no obstructions on the table surface.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in this must be prevented, however further valid movement commands must still be allowed.\u003C\u002Fli\u003E\\n\u003Cli\u003EPLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.\u003C\u002Fli\u003E\\n\u003Cli\u003E(0,0) can be considered as the SOUTH WEST corner and (5,5) as the NORTH EAST corner.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe first valid command to the robot is a PLACE command. After that, any sequence of commands may be issued, in any order, including another PLACE command. The library should discard all commands in the sequence until a valid PLACE command has been executed.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe PLACE command should be discarded if it places the robot outside of the table surface.\u003C\u002Fli\u003E\\n\u003Cli\u003EOnce the robot is on the table, subsequent PLACE commands could leave out the direction and only provide the coordinates. When this happens, the robot moves to the new coordinates without changing the direction.\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE will move the toy robot one unit forward in the direction it is currently facing.\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT will announce the X,Y and orientation of the robot.\u003C\u002Fli\u003E\\n\u003Cli\u003EA robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch2 id=\\\"example-input-and-output\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#example-input-and-output\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EExample Input and Output\u003C\u002Fh2\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 1 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 0,0,NORTH\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\\n\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 0,1,NORTH\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 2 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 0,0,NORTH\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\\n\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 0,0,WEST\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 3 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 1,2,EAST-\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\\n\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 3,3,NORTH\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 4 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE 1,2,EAST\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EPLACE 3,1\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\\n\u003Cstrong\u003EOutput:\u003C\u002Fstrong\u003E 3,2,NORTH\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch2 id=\\\"code-complete\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#code-complete\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ECode Complete\u003C\u002Fh2\u003E\\n\u003Cp\u003EWhen the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant\u002F Talent Acquisition Specialist who contacted you from Telstra Purple.\u003C\u002Fp\u003E\"}"}</script>
+	<script type="application/json" data-type="svelte-data" data-url="/development.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"Development\",\"interviews\":\"Toy Robot\",\"sortorder\":3},\"content\":\"\u003Ch1 id=\\\"toy-robot\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#toy-robot\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EToy Robot\u003C\u002Fh1\u003E\\n\u003Ch2 id=\\\"scenario\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#scenario\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EScenario\u003C\u002Fh2\u003E\\n\u003Cp\u003ECreate a library that can read in commands of the following form:\u003C\u002Fp\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EPLACE X, Y, DIRECTION\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT\u003C\u002Fli\u003E\\n\u003Cli\u003ERIGHT\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch2 id=\\\"developing-your-solution\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#developing-your-solution\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EDeveloping your Solution\u003C\u002Fh2\u003E\\n\u003Col\u003E\\n\u003Cli\u003EUse your preferred language, platform and IDE to implement this solution.\\n\u003Cul\u003E\\n\u003Cli\u003EIf C#: a console solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack.\u003C\u002Fli\u003E\\n\u003Cli\u003EIf iOS: please write an interactive UI for the application in Swift\u003C\u002Fli\u003E\\n\u003Cli\u003EIf Android: please write an interactive UI for the application in Kotlin\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003C\u002Fli\u003E\\n\u003Cli\u003EYour solution should be clean and easy to read, maintain and execute.\u003C\u002Fli\u003E\\n\u003Cli\u003EYou should provide build scripts or instructions to build and run the solution.\u003C\u002Fli\u003E\\n\u003Cli\u003EThere should be a user interface to run the solution and assess that it works correctly. This could be a command prompt interface that takes one string command in at a time.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Ch2 id=\\\"solution-requirements\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#solution-requirements\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ESolution Requirements\u003C\u002Fh2\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EThe library allows for a simulation of a toy robot moving on a 6 x 6 square tabletop.\u003C\u002Fli\u003E\\n\u003Cli\u003EThere are no obstructions on the table surface.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in this must be prevented, however further valid movement commands must still be allowed.\u003C\u002Fli\u003E\\n\u003Cli\u003EPLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.\u003C\u002Fli\u003E\\n\u003Cli\u003E(0,0) can be considered as the SOUTH WEST corner and (5,5) as the NORTH EAST corner.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe first valid command to the robot is a PLACE command. After that, any sequence of commands may be issued, in any order, including another PLACE command. The library should discard all commands in the sequence until a valid PLACE command has been executed.\u003C\u002Fli\u003E\\n\u003Cli\u003EThe PLACE command should be discarded if it places the robot outside of the table surface.\u003C\u002Fli\u003E\\n\u003Cli\u003EOnce the robot is on the table, subsequent PLACE commands could leave out the direction and only provide the coordinates. When this happens, the robot moves to the new coordinates without changing the direction.\u003C\u002Fli\u003E\\n\u003Cli\u003EMOVE will move the toy robot one unit forward in the direction it is currently facing.\u003C\u002Fli\u003E\\n\u003Cli\u003ELEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.\u003C\u002Fli\u003E\\n\u003Cli\u003EREPORT will announce the X,Y and orientation of the robot.\u003C\u002Fli\u003E\\n\u003Cli\u003EA robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Ch2 id=\\\"example-input-and-output\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#example-input-and-output\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EExample Input and Output\u003C\u002Fh2\u003E\\n\u003Col\u003E\\n\u003Cli\u003EExample 1 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-node-repl\\\"\u003E\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EPLACE \u003Cspan class=\\\"hljs-number\\\"\u003E0\u003C\u002Fspan\u003E,\u003Cspan class=\\\"hljs-number\\\"\u003E0\u003C\u002Fspan\u003E,NORTH\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EREPORT\u003C\u002Fspan\u003E\\nOutput: 0,1,NORTH\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Col start=\\\"2\\\"\u003E\\n\u003Cli\u003EExample 2 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-node-repl\\\"\u003E\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EPLACE \u003Cspan class=\\\"hljs-number\\\"\u003E0\u003C\u002Fspan\u003E,\u003Cspan class=\\\"hljs-number\\\"\u003E0\u003C\u002Fspan\u003E,NORTH\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003ELEFT\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EREPORT\u003C\u002Fspan\u003E\\nOutput: 0,0,WEST\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Col start=\\\"3\\\"\u003E\\n\u003Cli\u003EExample 3 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-node-repl\\\"\u003E\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EPLACE \u003Cspan class=\\\"hljs-number\\\"\u003E1\u003C\u002Fspan\u003E,\u003Cspan class=\\\"hljs-number\\\"\u003E2\u003C\u002Fspan\u003E,EAST\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003ELEFT\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EREPORT\u003C\u002Fspan\u003E\\nOutput: 3,3,NORTH\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Col start=\\\"4\\\"\u003E\\n\u003Cli\u003EExample 4 Input\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-node-repl\\\"\u003E\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EPLACE \u003Cspan class=\\\"hljs-number\\\"\u003E1\u003C\u002Fspan\u003E,\u003Cspan class=\\\"hljs-number\\\"\u003E2\u003C\u002Fspan\u003E,EAST\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003ELEFT\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EPLACE \u003Cspan class=\\\"hljs-number\\\"\u003E3\u003C\u002Fspan\u003E,\u003Cspan class=\\\"hljs-number\\\"\u003E1\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EMOVE\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-meta\\\"\u003E\u003E\u003C\u002Fspan\u003E \u003Cspan class=\\\"javascript\\\"\u003EREPORT\u003C\u002Fspan\u003E\\nOutput: 3,2,NORTH\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Ch2 id=\\\"code-complete\\\"\u003E\u003Ca aria-hidden=\\\"true\\\" tabindex=\\\"-1\\\" href=\\\"#code-complete\\\"\u003E\u003Cspan class=\\\"icon icon-link\\\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ECode Complete\u003C\u002Fh2\u003E\\n\u003Cp\u003EWhen the solution is code complete, save the source code to a repository (e.g. GitHub) and share this repository (or artefacts) with the Consultant\u002F Talent Acquisition Specialist who contacted you from Telstra Purple.\u003C\u002Fp\u003E\"}"}</script>
 		</div>
 	</body>
 </html>
