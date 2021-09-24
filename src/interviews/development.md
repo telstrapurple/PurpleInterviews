@@ -45,7 +45,8 @@ Create a library that can read in commands of the following form:
 ## Example Input and Output
 
 1. Example 1 Input
-``` 
+
+```
 > PLACE 0,0,NORTH
 > MOVE
 > REPORT
@@ -53,6 +54,7 @@ Output: 0,1,NORTH
 ```
 
 2. Example 2 Input
+
 ```
 > PLACE 0,0,NORTH
 > LEFT
@@ -61,6 +63,7 @@ Output: 0,0,WEST
 ```
 
 3. Example 3 Input
+
 ```
 > PLACE 1,2,EAST
 > MOVE
@@ -72,6 +75,7 @@ Output: 3,3,NORTH
 ```
 
 4. Example 4 Input
+
 ```
 > PLACE 1,2,EAST
 > MOVE
