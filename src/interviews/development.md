@@ -16,10 +16,10 @@ Create a library that can read in commands of the following form:
 - RIGHT
 - REPORT
 
-### Developing your Solution
+## Developing your Solution
 
 1. Use your preferred language, platform and IDE to implement this solution.
-   - If C#: A solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack, if not MS.
+   - If C#: a console solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack.
    - If iOS: please write an interactive UI for the application in Swift
    - If Android: please write an interactive UI for the application in Kotlin
 2. Your solution should be clean and easy to read, maintain and execute.
@@ -45,40 +45,44 @@ Create a library that can read in commands of the following form:
 ## Example Input and Output
 
 1. Example 1 Input
+``` 
+> PLACE 0,0,NORTH
+> MOVE
+> REPORT
+Output: 0,1,NORTH
+```
 
-- PLACE 0,0,NORTH
-- MOVE
-- REPORT
-  **Output:** 0,1,NORTH
+2. Example 2 Input
+```
+> PLACE 0,0,NORTH
+> LEFT
+> REPORT
+Output: 0,0,WEST
+```
 
-1. Example 2 Input
+3. Example 3 Input
+```
+> PLACE 1,2,EAST
+> MOVE
+> MOVE
+> LEFT
+> MOVE
+> REPORT
+Output: 3,3,NORTH
+```
 
-- PLACE 0,0,NORTH
-- LEFT
-- REPORT
-  **Output:** 0,0,WEST
-
-1. Example 3 Input
-
-- PLACE 1,2,EAST-
-- MOVE
-- MOVE
-- LEFT
-- MOVE
-- REPORT
-  **Output:** 3,3,NORTH
-
-1. Example 4 Input
-
-- PLACE 1,2,EAST
-- MOVE
-- LEFT
-- MOVE
-- PLACE 3,1
-- MOVE
-- REPORT
-  **Output:** 3,2,NORTH
+4. Example 4 Input
+```
+> PLACE 1,2,EAST
+> MOVE
+> LEFT
+> MOVE
+> PLACE 3,1
+> MOVE
+> REPORT
+Output: 3,2,NORTH
+```
 
 ## Code Complete
 
-When the solution is code complete, save the source code to a repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
+When the solution is code complete, save the source code to a repository (e.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
