@@ -53,14 +53,14 @@ When the solution is above is complete, save the PowerBI file and any supporting
 
 ## Prerequisites
 
-Please build the platform on the cloud environment as nomimated by the Consultant/ Talent Acquisition Specialist who has invited you to complete this test.
+Please build the platform on the cloud environment as nominated by the Consultant/ Talent Acquisition Specialist who has invited you to complete this test.
 
-In order to complete this test, you will need:
+To complete this test, you will need:
 
-1. Access to an Cloud service provider environment.
-   - For an Azure Subscription, you can create a [30-day free trial](https://azure.microsoft.com/en-au/free/) if you dont have an Azure subscription.
-   - For an AWS Account, you can utilise [AWS free tier](https://aws.amazon.com/free/) if you dont have an AWS Account.
-   - For an GCP Environment, you can utilise [GCP free tier](https://cloud.google.com/free) if you dont have an GCP Account.
+1. Access to a Cloud service provider environment.
+   - For an Azure Subscription, you can create a [30-day free trial](https://azure.microsoft.com/en-au/free/) if you don't have an Azure subscription.
+   - For an AWS Account, you can utilise [AWS free tier](https://aws.amazon.com/free/) if you don't have an AWS Account.
+   - For an GCP Environment, you can utilise [GCP free tier](https://cloud.google.com/free) if you don't have an GCP Account.
 2. Your laptop with your tools/ IDE that you like to work with.
 3. A public GitHub repo, or a Google/OneDrive where you can share your workings.
 
@@ -79,7 +79,7 @@ Follow these instructions and deploy using whatever means you feel necessary.
 
 First, create your resources in your Cloud service provider environment.
 
-1. Create all resoruces with the following tags.
+1. Create all resources with the following tags.
    - Department - Finance
    - Environment - Development
 2. Create a new storage resource with the hierarchical namespace enabled.
