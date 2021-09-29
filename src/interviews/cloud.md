@@ -67,8 +67,8 @@ Using your AWS Account, deploy the following.
 
 The development team colleagues have reached out and shared their two (2) CloudFormation Templates with you. They have not been tested, but they have invited you to use them with your deployment!
 
-1. [Deployment template](code/deployment.yaml)
-2. [EndPoint template](code/endpoint.yaml)
+1. [Deployment template](/code/deployment.yaml)
+2. [EndPoint template](/code/endpoint.yaml)
 
 ## Completion
 
