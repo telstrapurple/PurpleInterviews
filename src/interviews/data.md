@@ -127,4 +127,4 @@ Once the temporary data has been loaded into the data mart, transform the data i
 
 ## Completion
 
-When the solution is above is complete, save any artefacts created into a source code repository (E.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Cloud service provider environment running until the in-person technical interview has been conducted or as otherwise advised.
+When the solution above is complete, save any artefacts created and share them with the Consultant/Talent Acquisition Specialist who contacted you from Telstra Purple. If also possible, please keep your Cloud service provider environment running until the in-person technical interview has been conducted or as otherwise advised.

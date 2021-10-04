@@ -89,4 +89,4 @@ Output: 3,2,NORTH
 
 ## Code Complete
 
-When the solution is code complete, save the source code to a repository (e.g. GitHub) and share this repository (or artefacts) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
+When the solution is code complete, share your source code and supporting artefacts (e.g. GitHub/OneDrive/Google Drive) with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
