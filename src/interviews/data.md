@@ -38,16 +38,31 @@ You have been ask to create a Power BI report that combines both sources to answ
 ### Visualisation
 
 1. Create visuals using the modelled data that allow the business to answer the following questions.
-   - When and where can they find the cheapest fuel after the is discount applied?
+   - What is the average price of fuel across the region?
+   - When and where can they find the cheapest fuel after the discount applied? We should be able to compare the actual price and discounted price.
    - See a list of the top 10 sites with the cheapest fuel price?
    - Be able to drill-down into all the details for a the top 10 cheapest fuel stations?
    - Discover quickly which sites are open 24 hours a day?
 
-The business executives have also asked for how a consistent theme can be applied to the report and other reports in the future.
+### General
+
+1. The business executives have also asked for a consistent theme can be applied to the report and other reports in the future.
+2. The business executives is also interested in tracking historical price changes. Can you produce a strategy for this?
+
+### Report Considerations
+
+While developing the report, keep the following in mind
+   - A connection that allows new Fuel Prices to be refreshed each day.
+   - Good use of modelling. 
+   - Use of efficient DAX.
+   - At least two different types of visuals and extra elements(like text boxes, shapes etc.)
+   - A clean user friendly report that’s easy to read, visually appealing and answers the questions.
+
 
 ## Completion
 
 When the solution is above is complete, save the PowerBI file and any supporting templates and share with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
+
 
 # Data Engineer
 
