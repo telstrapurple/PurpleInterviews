@@ -38,16 +38,36 @@ You have been ask to create a Power BI report that combines both sources to answ
 ### Visualisation
 
 1. Create visuals using the modelled data that allow the business to answer the following questions.
-   - When and where can they find the cheapest fuel after the is discount applied?
+   - What is the avg prize of fuel across the region?
+   - When and where can they find the cheapest fuel after the is discount applied? We should be able to compare the actual prize and discounted prize.
    - See a list of the top 10 sites with the cheapest fuel price?
    - Be able to drill-down into all the details for a the top 10 cheapest fuel stations?
    - Discover quickly which sites are open 24 hours a day?
 
-The business executives have also asked for how a consistent theme can be applied to the report and other reports in the future.
+### General
+
+1. The business executives have also asked for a consistent theme can be applied to the report and other reports in the future.
+2. The business executives is also interested in tracking historical prize changes. Can you produce a strategy for this?
+
+##### *Optional Challenge*
+
+The client is also looking at expanding the report to add extra regions in the future. Can you update the report which involves ingesting the data for all regions?
+[Details here](https://www.fuelwatch.wa.gov.au/fuelwatch/pages/public/contentholder.jspx?key=fuelwatchRSS.html)
+
+### Report Considerations
+
+While developing the report, Keep the following in mind
+   - A connection that allows new Fuel Prices to be refreshed easily each day
+   - Good use of modelling 
+   - Use of efficient DAX 
+   - At least two different types of visuals and extra elements (like text boxes, shapes etc)
+   - A clean user friendly report that’s easy to read, visually appealing and answers the questions
+
 
 ## Completion
 
 When the solution is above is complete, save the PowerBI file and any supporting templates and share with the Consultant/ Talent Acquisition Specialist who contacted you from Telstra Purple.
+
 
 # Data Engineer
 
