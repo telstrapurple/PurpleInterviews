@@ -42,8 +42,8 @@ You have been ask to create a Power BI report that combines both sources to answ
 1. Create visuals using the modelled data that allow the business to answer the following questions.
    - What is the average price of fuel across the region over all time?
    - On what date and where can they find the cheapest fuel after the discount has been applied? We should be able to compare the full price and the discounted price.
-   - See a list of the top 10 sites with the cheapest fuel price on a given date?
-   - Be able to drill-down into all the details for a the top 10 cheapest fuel stations?
+   - See a list of the top 10 sites with the cheapest fuel price for a chosen date?
+   - Be able to drill-down into all the details for the top 10 cheapest fuel stations?
    - Discover quickly which sites are open 24 hours a day?
 
 ### General
@@ -127,8 +127,8 @@ The source data you will be using is the [FuelWatch RSS feed](http://www.fuelwat
    - datalakestore/Raw/FuelWatch/&lt;Current date as format yyyy-mm-dd&gt;.
    - The file name should be **feed.parquet**.
 4. Once the file has been imported into the data lake, add another activity to the same pipeline which reads the parquet file from the data lake and writes it to the DataMart SQL database.
-   - Use a temporary table in the tempstage schema called **FuelPrices**. This activity must run after the activity to import the source data.
    - The connection to the SQL PaaS database should be secured and not exposed in your pipeline code.
+   - Use a temporary table in the tempstage schema called **FuelPrices**. This activity must run after the activity to import the source data.
 
 ### Modelling
 
