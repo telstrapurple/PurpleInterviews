@@ -54,17 +54,16 @@ You have been ask to create a Power BI report that combines both sources to answ
 ### Report Considerations
 
 While developing the report, keep the following in mind
-   - The FuelWatch data is updated on a daily basis, how would your model manage this? 
-   - Good use of dimensional modelling. 
-   - Use of efficient DAX/M.
-   - At least two different types of visuals and extra elements (like text boxes, shapes etc.)
-   - A clean user friendly report that’s easy to read, visually appealing and answers the questions.
 
+- The FuelWatch data is updated on a daily basis, how would your model manage this?
+- Good use of dimensional modelling.
+- Use of efficient DAX/M.
+- At least two different types of visuals and extra elements (like text boxes, shapes etc.)
+- A clean user friendly report that’s easy to read, visually appealing and answers the questions.
 
 ## Completion
 
 When the solution is above is complete, create a ReadMe document describing how your model manages new data on subsequent days and then save this with the Power BI file and any other supporting templates and share with the Consultant/Talent Acquisition Specialist who contacted you from Telstra Purple.
-
 
 # Data Engineer
 
@@ -141,12 +140,12 @@ Once the temporary data has been loaded into the DataMart database, transform th
    - Create Clustered Indexes on the Primary Keys and Non-Clustered Indexes on any Foreign Keys.
 2. Create a single fact table called **FuelPrice**. It should have the columns below:
    - FuelPriceID (Identity), BrandID (From the Brand table), SiteID (From the Site table), Price, DateCreated (Numeric and stored as yyyymmdd. Default to current date) and DateModified (Numeric and stored as yyyymmdd, nullable, no default).
-3. Add a primary key to the **FuelPrice** fact table across the SiteID, BrandID and DateCreated columns 
+3. Add a primary key to the **FuelPrice** fact table across the SiteID, BrandID and DateCreated columns
    - Add a clustered index on the FuelPriceID column.
 4. The naming convention for indexes should be `IDX_<Table Name>_<Column Name>`.
 5. Create appropriate artefacts, scripts or pipelines to populate the tables above.
    - The pipeline must be able to handle intra-day changes to the prices by modifying the current days' record.
-   - The pipeline must be able to handle subsequent days' prices by adding new records. 
+   - The pipeline must be able to handle subsequent days' prices by adding new records.
 6. Keep these artefacts handy for the technical interview.
 
 ## Completion
