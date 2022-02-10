@@ -54,12 +54,11 @@ You have been ask to create a Power BI report that combines both sources to answ
 ### Report Considerations
 
 While developing the report, keep the following in mind
-
-- The FuelWatch data is updated on a daily basis, how would your model manage this?
-- Good use of dimensional modelling.
-- Use of efficient DAX/M.
-- At least two different types of visuals and extra elements (like text boxes, shapes etc.)
-- A clean user friendly report that’s easy to read, visually appealing and answers the questions.
+   - The FuelWatch data is updated on a daily basis, how would your model manage this? 
+   - Good use of dimensional modelling. 
+   - Use of efficient DAX/M.
+   - At least two different types of visuals and extra elements (like text boxes, shapes etc.)
+   - A clean user friendly report that’s easy to read, visually appealing and answers the questions.
 
 ## Completion
 
@@ -126,6 +125,7 @@ The source data you will be using is the [FuelWatch RSS feed](http://www.fuelwat
    - datalakestore/Raw/FuelWatch/&lt;Current date as format yyyy-mm-dd&gt;.
    - The file name should be **feed.parquet**.
 4. Once the file has been imported into the data lake, add another activity to the same pipeline which reads the parquet file from the data lake and writes it to the DataMart SQL database.
+   - The connection to the SQL PaaS database should be secured and not exposed in your pipeline code.
    - Use a temporary table in the tempstage schema called **FuelPrices**. This activity must run after the activity to import the source data.
    - The connection to the SQL PaaS database should be secured and not exposed in your pipeline code.
 
@@ -140,7 +140,7 @@ Once the temporary data has been loaded into the DataMart database, transform th
    - Create Clustered Indexes on the Primary Keys and Non-Clustered Indexes on any Foreign Keys.
 2. Create a single fact table called **FuelPrice**. It should have the columns below:
    - FuelPriceID (Identity), BrandID (From the Brand table), SiteID (From the Site table), Price, DateCreated (Numeric and stored as yyyymmdd. Default to current date) and DateModified (Numeric and stored as yyyymmdd, nullable, no default).
-3. Add a primary key to the **FuelPrice** fact table across the SiteID, BrandID and DateCreated columns
+3. Add a primary key to the **FuelPrice** fact table across the SiteID, BrandID and DateCreated columns 
    - Add a clustered index on the FuelPriceID column.
 4. The naming convention for indexes should be `IDX_<Table Name>_<Column Name>`.
 5. Create appropriate artefacts, scripts or pipelines to populate the tables above.
