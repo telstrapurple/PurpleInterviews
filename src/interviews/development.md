@@ -19,13 +19,16 @@ Create a library that can read in commands of the following form:
 ## Developing your Solution
 
 1. Use your preferred language, platform and IDE to implement this solution.
-   - If C#: a console solution grounded in the Microsoft stack is ideal, but we're also happy to look at a solution with your preferred tech stack.
-   - If iOS: please write an interactive UI for the application in Swift
-   - If Android: please write an interactive UI for the application in Kotlin
-2. Your solution should be clean and easy to read, maintain and execute.
-3. You should provide build scripts or instructions to build and run the solution.
-4. There should be a user interface to run the solution and assess that it works correctly. This could be a command prompt interface that takes one string command in at a time.
-5. The code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.
+   - .NET: A console application written in C#
+   - Web: A web app written in React and TypeScript
+   - iOS: An interactive UI for the application written in Swift
+   - Android: An interactive UI for the application written in Kotlin
+2. Your solution should be clean, easy to read, maintain and production ready. It should also be proportionally complex to address the problem.
+3. Ensure your code is robust and satisfies the test cases.
+4. Error conditions should be handled appropriately and presented in a clear way.
+5. You should provide build scripts or instructions to build and run the solution.
+6. There should be a user interface to run the solution and assess that it works correctly. This could be a command prompt interface that takes one string command in at a time.
+7. The code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.
 
 ## Solution Requirements
 
